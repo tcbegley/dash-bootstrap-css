@@ -1,0 +1,21 @@
+{
+  "name": "dash-bootstrap-css",
+  "version": "0.0.1",
+  "description": "Bootstrap stylesheets for use with Plotly Dash",
+  "main": "index.js",
+  "scripts": {
+    "grunt": "grunt"
+  },
+  "author": "Faculty",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "bootstrap": "^4.3.1",
+    "bootswatch": "^4.3.1",
+    "grunt": "^1.0.3",
+    "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-sass": "^3.0.0",
+    "node-sass": "^4.11.0"
+  }
+}
