@@ -6,13 +6,26 @@ consistent styling to [*dash-core-components*][dcc] when using
 [*dash-bootstrap-components*][dbc].
 
 **Note:** This project is still in its infancy, and so far only styles for
-`dcc.Dropdown` have been added, and not extensively tested. Use with caution.
+`dcc.DatePickerRange`, `dcc.DatePickerSingle` and `dcc.Dropdown` have been
+added, and not extensively tested. Use with caution.
 
 ## Getting started
 
 Simply download the stylesheet of interest from `dist/` and link it in your
 Dash app. See the [Dash documentation][dash-docs] for instructions on how to do
-this.
+this. Each Dash Bootstrap CSS stylesheet extends either Bootstrap or the
+Bootswatch theme of the same name and can be used as a drop in replacement. The
+additional styling for Dash components only applies to children of a component
+with the class `dash-bootstrap` applied. This allows you to ensure that Dash
+Bootstrap CSS will not interfere with existing styles outside of the children
+of that component.
+
+For example, to style a `dcc.Dropdown` with Dash Bootstrap CSS, you would
+simply do something like
+
+```python
+app.layout = html.Div(dcc.Dropdown(options=[...]), className="dash-bootstrap")
+```
 
 ## Building
 
