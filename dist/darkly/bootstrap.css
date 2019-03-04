@@ -9685,7 +9685,207 @@ a.text-dark:hover, a.text-dark:focus {
   color: #fff;
 }
 
-.dcc-bootstrap-wrapper .Select-control {
+.dash-bootstrap .DateRangePickerInput,
+.dash-bootstrap .SingleDatePickerInput {
+  height: calc(1.5em + 0.75rem + 2px);
+  font-size: 0.9375rem;
+  font-weight: 400;
+  color: #444;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dash-bootstrap .DateRangePickerInput,
+  .dash-bootstrap .SingleDatePickerInput {
+    transition: none;
+  }
+}
+
+.dash-bootstrap .DateRangePickerInput:hover,
+.dash-bootstrap .SingleDatePickerInput:hover {
+  box-shadow: none;
+}
+
+.dash-bootstrap .DateInput {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  color: #444;
+  background-color: transparent;
+  background-clip: padding-box;
+  padding: 0;
+  height: calc(1.5em + 0.75rem);
+}
+
+.dash-bootstrap .DateInput__input {
+  padding: 0.375rem 0.75rem;
+  height: calc(1.5em + 0.75rem);
+}
+
+.dash-bootstrap .DateInput__display-text {
+  padding: 0.375rem 0.75rem;
+  height: calc(1.5em + 0.75rem);
+  line-height: 1.5;
+  color: #444;
+  font-weight: 400;
+}
+
+.dash-bootstrap .DateInput__display-text--focused {
+  background: rgba(55, 90, 127, 0.1);
+}
+
+.dash-bootstrap .DateRangePicker__picker,
+.dash-bootstrap .SingleDatePicker__picker {
+  top: calc(calc(1.5em + 0.75rem + 2px) + 15px);
+  background-color: transparent;
+}
+
+.dash-bootstrap .DayPicker {
+  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+  text-align: start;
+  text-decoration: none;
+  text-shadow: none;
+  text-transform: none;
+  letter-spacing: normal;
+  word-break: normal;
+  word-spacing: normal;
+  white-space: normal;
+  line-break: auto;
+  font-size: 0.8203125rem;
+  background-color: #303030;
+}
+
+.dash-bootstrap .DayPicker--horizontal {
+  border-radius: 0.3rem;
+  box-shadow: none;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.dash-bootstrap .transition-container {
+  border-radius: 0.3rem;
+  width: calc(318px - 2 * 1px) !important;
+}
+
+.dash-bootstrap .DateInput--with-caret::after {
+  top: calc(calc(1.5em + 0.75rem + 2px) + 6px);
+  border-bottom-color: #303030;
+}
+
+.dash-bootstrap .DateInput--with-caret::before {
+  top: calc(calc(1.5em + 0.75rem + 2px) + 5px);
+  border-bottom-color: rgba(0, 0, 0, 0.2);
+}
+
+.dash-bootstrap .CalendarMonth__caption {
+  color: #fff;
+}
+
+.dash-bootstrap .CalendarMonthGrid {
+  background-color: #303030;
+}
+
+.dash-bootstrap .CalendarDay {
+  color: #fff;
+  border-color: #999;
+}
+
+.dash-bootstrap .CalendarDay--outside {
+  border: 0;
+  cursor: default;
+}
+
+.dash-bootstrap .CalendarDay--hovered {
+  background: #999;
+  border: 1px solid #adb5bd;
+  color: #222;
+}
+
+.dash-bootstrap .CalendarDay--selected-span {
+  background: #28415b;
+  border: 1px double #28415b;
+  color: #fff;
+}
+
+.dash-bootstrap .CalendarDay--hovered-span {
+  background: #2f4d6d;
+  color: #fff;
+}
+
+.dash-bootstrap .CalendarDay--after-hovered-start {
+  background: #1d6fa5;
+  color: #fff;
+}
+
+.dash-bootstrap .CalendarDay--selected,
+.dash-bootstrap .CalendarDay--selected-end,
+.dash-bootstrap .CalendarDay--selected-start {
+  background: #375a7f;
+  border-color: #375a7f;
+  color: #fff;
+}
+
+.dash-bootstrap .CalendarDay--blocked-out-of-range {
+  color: #444;
+  border-color: #444;
+  background: #303030;
+  cursor: default;
+}
+
+.dash-bootstrap .DayPickerNavigation--horizontal .DayPickerNavigation__next {
+  right: 20px;
+}
+
+.dash-bootstrap .DayPickerNavigation--horizontal .DayPickerNavigation__next,
+.dash-bootstrap .DayPickerNavigation--horizontal .DayPickerNavigation__prev {
+  border-radius: 0.25rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background: #303030;
+}
+
+.dash-bootstrap .DayPickerNavigation--horizontal .DayPickerNavigation__next svg,
+.dash-bootstrap .DayPickerNavigation--horizontal .DayPickerNavigation__prev svg {
+  fill: #fff;
+}
+
+.dash-bootstrap .DayPickerNavigation--horizontal .DayPickerNavigation__next:hover,
+.dash-bootstrap .DayPickerNavigation--horizontal .DayPickerNavigation__prev:hover {
+  background: #303030;
+}
+
+.dash-bootstrap .DayPickerNavigation--horizontal .DayPickerNavigation__next:hover svg,
+.dash-bootstrap .DayPickerNavigation--horizontal .DayPickerNavigation__prev:hover svg {
+  fill: #222;
+}
+
+.dash-bootstrap .DayPickerKeyboardShortcuts__show--bottom-right {
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid #375a7f;
+  border-left: 16px solid transparent;
+  border-right: 16px solid #375a7f;
+  border-bottom-right-radius: calc(0.3rem - 1px);
+}
+
+.dash-bootstrap .DayPickerKeyboardShortcuts__show--bottom-right:hover {
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid #2b4764;
+  border-left: 16px solid transparent;
+  border-right: 16px solid #2b4764;
+}
+
+.dash-bootstrap .DayPickerKeyboardShortcuts__show--bottom-right .DayPickerKeyboardShortcuts__show_span {
+  bottom: -11px;
+  right: -12px;
+  color: #fff;
+}
+
+.dash-bootstrap .Select-control {
   height: calc(1.5em + 0.75rem + 2px);
   font-size: 0.9375rem;
   font-weight: 400;
@@ -9699,66 +9899,66 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .dcc-bootstrap-wrapper .Select-control {
+  .dash-bootstrap .Select-control {
     transition: none;
   }
 }
 
-.dcc-bootstrap-wrapper .Select-control:hover {
+.dash-bootstrap .Select-control:hover {
   box-shadow: none;
 }
 
-.dcc-bootstrap-wrapper .is-open > .Select-control {
+.dash-bootstrap .is-open > .Select-control {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
 
-.dcc-bootstrap-wrapper .is-focused:not(.is-open) > .Select-control {
+.dash-bootstrap .is-focused:not(.is-open) > .Select-control {
   border-color: #739ac2;
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(55, 90, 127, 0.25);
 }
 
-.dcc-bootstrap-wrapper .Select.is-disabled > .Select-control {
+.dash-bootstrap .Select.is-disabled > .Select-control {
   background-color: #ebebeb;
 }
 
-.dcc-bootstrap-wrapper .Select--multi .Select-value {
+.dash-bootstrap .Select--multi .Select-value {
   border-radius: 0.125rem;
   color: #375a7f;
   border-color: rgba(55, 90, 127, 0.25);
   background-color: rgba(55, 90, 127, 0.1);
 }
 
-.dcc-bootstrap-wrapper .Select--multi .Select-value-icon {
+.dash-bootstrap .Select--multi .Select-value-icon {
   border-right-color: rgba(55, 90, 127, 0.25);
 }
 
-.dcc-bootstrap-wrapper .has-value.Select--single > .Select-control .Select-value .Select-value-label,
-.dcc-bootstrap-wrapper .has-value.is-pseudo-focused.Select--single > .Select-control .Select-value .Select-value-label {
+.dash-bootstrap .has-value.Select--single > .Select-control .Select-value .Select-value-label,
+.dash-bootstrap .has-value.is-pseudo-focused.Select--single > .Select-control .Select-value .Select-value-label {
   color: #444;
 }
 
-.dcc-bootstrap-wrapper .Select-multi-value-wrapper {
+.dash-bootstrap .Select-multi-value-wrapper {
   height: calc(1.5em + 0.75rem);
 }
 
-.dcc-bootstrap-wrapper .Select-placeholder {
+.dash-bootstrap .Select-placeholder {
   color: #999;
   padding-left: 0.75rem;
   padding-right: 0.75rem;
 }
 
-.dcc-bootstrap-wrapper .Select--single > .Select-control .Select-value,
-.dcc-bootstrap-wrapper .Select-placeholder {
+.dash-bootstrap .Select--single > .Select-control .Select-value,
+.dash-bootstrap .Select-placeholder {
   line-height: calc(1.5em + 0.75rem);
 }
 
-.dcc-bootstrap-wrapper .Select-input {
+.dash-bootstrap .Select-input {
   height: calc(1.5em + 0.75rem);
 }
 
-.dcc-bootstrap-wrapper .Select-menu-outer {
+.dash-bootstrap .Select-menu-outer {
   border-bottom-right-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
   background-color: #fff;
@@ -9769,10 +9969,10 @@ a.text-dark:hover, a.text-dark:focus {
   color: #444;
 }
 
-.dcc-bootstrap-wrapper .VirtualizedSelectOption {
+.dash-bootstrap .VirtualizedSelectOption {
   height: calc(1.5em + 0.75rem) !important;
 }
 
-.dcc-bootstrap-wrapper .VirtualizedSelectFocusedOption {
+.dash-bootstrap .VirtualizedSelectFocusedOption {
   background-color: rgba(55, 90, 127, 0.1) !important;
 }
