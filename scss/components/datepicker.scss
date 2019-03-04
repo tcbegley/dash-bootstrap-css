@@ -1,4 +1,5 @@
 .dash-bootstrap {
+  .DateRangePickerInput,
   .SingleDatePickerInput {
     height: $input-height;
     @include font-size($input-font-size);
@@ -44,6 +45,7 @@
     background: rgba(theme-color("primary"), 0.1);
   }
 
+  .DateRangePicker__picker,
   .SingleDatePicker__picker {
     top: calc(#{$input-height} + 15px);
     background-color: transparent;
@@ -102,6 +104,25 @@
     background: color-yiq($popover-bg, gray("100"), gray("600"));
     border: 1px solid color-yiq($popover-bg, gray("300"), gray("500"));
     color: color-yiq(gray("100"), $yiq-text-dark, $yiq-text-light, 200);
+  }
+
+  .CalendarDay--selected-span {
+    $span-color: color-yiq($popover-bg, lighten(theme-color("primary"), 10), darken(theme-color("primary"), 10));
+    background: $span-color;
+    border: 1px double $span-color;
+    color: color-yiq($span-color);
+  }
+
+  .CalendarDay--hovered-span {
+    $span-color: color-yiq($popover-bg, lighten(theme-color("primary"), 5), darken(theme-color("primary"), 5));
+    background: $span-color;
+    color: color-yiq($span-color);
+  }
+
+  .CalendarDay--after-hovered-start {
+    $span-color: color-yiq($popover-bg, lighten(theme-color("info"), 15), darken(theme-color("info"), 15));
+    background: $span-color;
+    color: color-yiq($span-color);
   }
 
   .CalendarDay--selected,
