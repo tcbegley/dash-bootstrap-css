@@ -5,9 +5,9 @@ This repo contains [Bootstrap v4][bsv4] compatible stylesheets for use with
 consistent styling to [*dash-core-components*][dcc] when using
 [*dash-bootstrap-components*][dbc].
 
-**Note:** This project is still in its infancy, and so far only styles for
-`dcc.DatePickerRange`, `dcc.DatePickerSingle` and `dcc.Dropdown` have been
-added, and not extensively tested. Use with caution.
+**Note:** This repository is experimental, and I might break things, or fail to
+keep up with new releases of Dash. Please use with caution, and open an issue if
+you discover something that doesn't work as you would expect.
 
 ## Getting started
 
