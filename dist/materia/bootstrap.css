@@ -10863,6 +10863,19 @@ select.form-control[multiple] {
   width: 100%;
 }
 
+.dash-bootstrap .DateInput > input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+  opacity: 1;
+}
+
+.dash-bootstrap .DateInput > input::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.dash-bootstrap .DateInput > input:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
 .dash-bootstrap .DateInput_input {
   padding: 1rem 0;
   height: calc(1.5em + 2rem);
