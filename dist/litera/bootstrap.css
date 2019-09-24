@@ -9758,6 +9758,19 @@ table-primary, table-secondary, table-success, table-info, table-warning, table-
   width: 100%;
 }
 
+.dash-bootstrap .DateInput > input::placeholder {
+  color: #868e96;
+  opacity: 1;
+}
+
+.dash-bootstrap .DateInput > input::-ms-input-placeholder {
+  color: #868e96;
+}
+
+.dash-bootstrap .DateInput > input:-ms-input-placeholder {
+  color: #868e96;
+}
+
 .dash-bootstrap .DateInput_input {
   padding: 0.5rem 1.1rem;
   height: calc(1.5em + 1rem);

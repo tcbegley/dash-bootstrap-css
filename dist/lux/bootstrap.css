@@ -9633,6 +9633,19 @@ th {
   width: 100%;
 }
 
+.dash-bootstrap .DateInput > input::placeholder {
+  color: #919aa1;
+  opacity: 1;
+}
+
+.dash-bootstrap .DateInput > input::-ms-input-placeholder {
+  color: #919aa1;
+}
+
+.dash-bootstrap .DateInput > input:-ms-input-placeholder {
+  color: #919aa1;
+}
+
 .dash-bootstrap .DateInput_input {
   padding: 0.75rem 2rem;
   height: calc(1.5em + 1.5rem);
