@@ -9918,3 +9918,67 @@ a.text-dark:hover, a.text-dark:focus {
 .dash-bootstrap .VirtualizedSelectFocusedOption {
   background-color: rgba(217, 35, 15, 0.1) !important;
 }
+
+.dash-bootstrap .rc-slider {
+  height: 0.5rem;
+  padding: 0;
+}
+
+.dash-bootstrap .rc-slider-handle {
+  border: 0;
+  width: 1rem;
+  height: 1rem;
+  margin-top: calc( (0.5rem - 1rem) / 2);
+  margin-left: -0.5rem;
+  background-color: #D9230F;
+  border-radius: 1rem;
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dash-bootstrap .rc-slider-handle {
+    transition: none;
+  }
+}
+
+.dash-bootstrap .rc-slider-handle:focus {
+  outline: 0;
+  box-shadow: 0 0 0 1px #FCFCFC, 0 0 0 0.2rem rgba(217, 35, 15, 0.25);
+}
+
+.dash-bootstrap .rc-slider-rail {
+  background-color: #ccc;
+  height: 0.5rem;
+  border-radius: 1rem;
+}
+
+.dash-bootstrap .rc-slider-track {
+  background-color: #e87b6f;
+  height: 0.5rem;
+  border-radius: 1rem;
+}
+
+.dash-bootstrap .rc-slider-step {
+  height: 0.5rem;
+}
+
+.dash-bootstrap .rc-slider-dot {
+  border: 0;
+  background-color: #ccc;
+  bottom: calc( (0.5rem - 1rem) / 2 + 2px);
+  margin-left: -0.5rem;
+  height: calc(1rem - 4px);
+  width: calc(1rem - 4px);
+}
+
+.dash-bootstrap .rc-slider-dot.rc-slider-dot-active {
+  background-color: #e87b6f;
+}
+
+.dash-bootstrap .rc-slider-mark-text {
+  color: #777;
+}
+
+.dash-bootstrap .rc-slider-mark-text.rc-slider-mark-text-active {
+  color: #373a3c;
+}
