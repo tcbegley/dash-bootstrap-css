@@ -32,6 +32,22 @@
     background: transparent;
     flex-grow: 1;
     width: 100%;
+
+    // Chrome, Firefox, Opera, Safari
+    & > input::placeholder {
+      color: $input-placeholder-color;
+      opacity: 1; // Firefox
+    }
+
+    // Microsoft Edge
+    & > input::-ms-input-placeholder {
+      color: $input-placeholder-color;
+    }
+
+    // Internet Explorer
+    & > input:-ms-input-placeholder {
+      color: $input-placeholder-color;
+    }
   }
 
   .DateInput_input {
