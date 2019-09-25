@@ -27,6 +27,9 @@ simply do something like
 app.layout = html.Div(dcc.Dropdown(options=[...]), className="dash-bootstrap")
 ```
 
+Each sheet currently supports `dcc.DatePickerSingle`, `dcc.DatePickerRange`,
+`dcc.Dropdown`, `dcc.Slider`, and `dcc.RangeSlider`.
+
 ## Building
 
 The stylesheets are compiled from the SASS source files available in `scss/`.
