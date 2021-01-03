@@ -11,14 +11,17 @@ you discover something that doesn't work as you would expect.
 
 ## Getting started
 
-Simply download the stylesheet of interest from `dist/` and link it in your
-Dash app. See the [Dash documentation][dash-docs] for instructions on how to do
-this. Each Dash Bootstrap CSS stylesheet extends either Bootstrap or the
-Bootswatch theme of the same name and can be used as a drop in replacement. The
-additional styling for Dash components only applies to children of a component
-with the class `dash-bootstrap` applied. This allows you to ensure that Dash
-Bootstrap CSS will not interfere with existing styles outside of the children
-of that component.
+Take a look at the example app in `example/`. There are instructions on how to
+run it in `example/README.md`.
+
+To use these stylesheets in your own app, simply download the stylesheet of
+interest from `dist/` and link it in your Dash app. See the
+[Dash documentation][dash-docs] for instructions on how to do this. Each Dash
+Bootstrap CSS stylesheet extends either Bootstrap or the Bootswatch theme of
+the same name and can be used as a drop in replacement. The additional styling
+for Dash components only applies to children of a component with the class
+`dash-bootstrap` applied. This allows you to ensure that Dash Bootstrap CSS will
+not interfere with existing styles outside of the children of that component.
 
 For example, to style a `dcc.Dropdown` with Dash Bootstrap CSS, you would
 simply do something like

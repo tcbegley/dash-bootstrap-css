@@ -1,2 +1,5 @@
 .sass-cache
 node_modules
+
+# exapmle css files
+example/assets/*.css
