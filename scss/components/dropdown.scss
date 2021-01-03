@@ -88,6 +88,7 @@
       line-height: calc(#{$input-font-size} * #{$input-line-height});
       padding-top: 0;
       padding-bottom: 0;
+      vertical-align: top;
 
       &:hover {
         background-color: rgba(theme-color("primary"), 0.2);
@@ -103,6 +104,7 @@
       padding-bottom: 0;
       line-height: calc(#{$input-font-size} * #{$input-line-height});
       height: calc(#{$input-font-size} * #{$input-line-height});
+      vertical-align: top;
     }
   }
 
@@ -114,7 +116,11 @@
       border-bottom-right-radius: 0;
       border-bottom-left-radius: 0;
     }
-    background-color: $input-bg;
+    @if $input-bg == transparent {
+      background-color: $card-bg;
+    } @else {
+      background-color: $input-bg;
+    }
     background-clip: padding-box;
     border: $input-border-width solid $input-border-color;
     border-top-color: $input-border-color;
