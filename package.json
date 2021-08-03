@@ -17,6 +17,6 @@
     "grunt-contrib-copy": "^1.0.0",
     "grunt-sass": "^3.1.0",
     "node-sass": "^4.14.1",
-    "tar": "^4.4.13"
+    "tar": "^4.4.15"
   }
 }
